@@ -1,0 +1,63 @@
+.el-card.ems-card{
+  width: 100%;
+  height: 100%;
+  color: #000;
+  border-radius: 0;
+  border: none;
+  // background: radial-gradient(circle at center center, rgba(51, 171, 255, .05), rgba(51, 171, 255, .15)),
+  // linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) left top,
+  // linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) left top,
+  // linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) right top,
+  // linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) right top,
+  // linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) left bottom,
+  // linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) left bottom,
+  // linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) right bottom,
+  // linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) right bottom,
+  // linear-gradient(rgba(56, 144, 184, 0.60), rgba(56, 144, 184, 0.60)) top,
+  // linear-gradient(rgba(26, 87, 130, 0.60), rgba(26, 87, 130, 0.60)) bottom,
+  // linear-gradient(rgba(56, 144, 184, 0.60), rgba(219, 240, 255, 0.80), rgba(26, 87, 130, 0.60)) left,
+  // linear-gradient(rgba(56, 144, 184, 0.60), rgba(219, 240, 255, 0.80), rgba(26, 87, 130, 0.60)) right;
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 1px 10px, 10px 1px, 1px 10px, 10px 1px, 1px 10px, 10px 1px, 1px 10px, 10px 1px, 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+  position: relative;
+  .el-card__header{
+    padding: 0px 18px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid rgba(51,171,255,0.2);
+    .title{
+      position: relative;
+      margin: 0px;
+      padding-left: 12px;
+      line-height: 20px;
+      font-size: 16px;
+      // font-weight: bold;
+      color: #000;
+    }
+    .title:before{
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #014099;
+      position: absolute;
+      top: 8px;
+      left: 0;
+    }
+  }
+  .el-card-group{
+    // margin-bottom: 15px;
+    position: relative;
+    .el-form-item{
+      margin-bottom: 15px;
+    }
+    .el-card-button-group{
+      position: absolute;
+      right: 0px;
+      bottom: 15px;
+    }
+  }
+}
+.el-card.single-card{
+  min-height: calc(100vh - 200px)
+}

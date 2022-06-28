@@ -1,0 +1,273 @@
+
+// 所有的input都在这里封装 包括 input radio checkbox date el-textarea button
+// date style
+.ems-date{
+    input{
+      border-color: #4983ac;
+      background: rgba(43,142,211,0.4);
+    }
+    input:hover{
+      border-color: #4983ac;
+    }
+  }
+  .el-picker-panel__footer,.el-picker-panel{
+    background: #fff;
+    border: none;
+    .el-button+.el-button{
+    height:30px;
+    padding:6px 20px;
+    color: #000;
+    background: #014099;
+    border: 1px solid #014099;
+    }
+    .el-button+.el-button:hover{
+      background: #006FdF;
+    }
+    .el-date-table td.in-range div{
+      background: #006FdF;
+    }
+    .el-time-panel{
+      background: #fff;
+      .el-time-spinner__item{
+        color: #000;
+      }
+      .el-time-spinner__item:hover{
+        background: rgba(43,142,211,0.4);
+      }
+      .el-time-panel__btn{
+        color: #006FdF;
+      }
+    }
+  }
+  .el-month-table td .cell,.el-year-table td .cell,.el-date-picker__header-label,.el-picker-panel__icon-btn,.el-date-table__row,.el-date-table th{
+    color: #000;
+  }
+  .el-year-table td.disabled .cell,.el-month-table td.disabled .cell,.el-date-table td.disabled div{
+    background: rgba(255,255,255,0.05);
+  }
+  // 样式修改
+  .el-input--small .el-input__inner {
+    height: 28px !important;
+    line-height: 28px !important;
+  }
+ .el-input--small .el-input__inner{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #D9D9D9;
+    color: #000000;
+    height: 28px;
+    line-height: 28px;
+  }
+  .el-date-range-picker__header div,.el-input--mini .el-input__inner{
+    color: #000000;
+  }
+  .el-select .el-input.is-focus .el-input__inner {
+    border-color: #3FA4ED;
+}
+.el-form--inline .el-form-item__content .el-input--small {
+  font-size: 12px;
+  width: 160px;
+  height: 28px;
+  line-height: 28px;
+}
+.el-input__prefix, .el-input__suffix {
+  top: 5px !important;
+}
+.el-select .el-input .el-select__caret.is-reverse {
+  margin-top: -6px;
+  right: 0px;
+  position: absolute;
+}
+.el-button--mini, .el-button--small {
+  font-size: 12px;
+  border-radius: 2px;
+  width: 64px;
+  height: 28px;
+}
+
+  // 统配修改el-input样式
+ .el-range-editor--medium.el-input__inner,.el-input--medium .el-input__inner{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #D9D9D9;
+    border-radius: 0;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #000;
+  }
+  .el-input.is-disabled .el-input__inner{
+    background: rgba(0,0,0,0.05);
+    border: 1px solid #43648F;
+    border-radius: 0;
+  }
+  .el-form-item.is-success .el-input__inner{
+    border-color:#43648F;
+  }
+  .el-range-editor--medium .el-range-input{
+    background:none;
+    color: #FFFFFF;
+  }
+  .labelclass .el-form-item__label {
+    color: #333;
+    text-align: left;
+    font-weight:400;
+  }
+  .labelclass .el-input--small .el-input__inner {
+  height: 28px !important;
+  line-height: 28px !important;
+  width: 160px;
+  }
+  // 两个时间中间的横线 颜色
+  .el-date-editor .el-range-separator{color: #FFFFFF}
+  .el-radio-group.ems-radio-button{
+    .el-radio-button{
+      // margin-right:10px;
+      .el-radio-button__inner{
+        background: rgba(255,255,255,0);
+        border: 1px solid #014099;
+        border-radius: 0;      
+        box-shadow: inset 0 0 8px 0 #014099;
+        color: #fff;
+      }
+    } 
+    .is-active{
+      .el-radio-button__inner{
+        background:#014099;
+      }
+    }
+  }
+
+//   el-textarea 多行输入框
+  .el-textarea__inner{
+    background: rgba(255,255,255,0.05);
+    border: 1px solid #43648F;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  }
+
+  //ems-button 按钮
+.ems-button{
+    border-radius: 0;
+    margin-left: 20px;
+    height:36px;
+    padding:6px 20px;
+    background: #014099;
+    border: 1px solid #014099;
+    // min-width: 100px;
+}
+.buttonon{
+  background: #0048A5;
+border: 1px solid rgba(8,20,33,0.55);
+box-shadow: inset -1px 0 2px 0 rgba(0,0,0,0.50), inset 0 1px 2px 0 rgba(0,0,0,0.50), inset 0 -1px 
+}
+.buttonoff{
+  background: #014099;
+border: 1px solid rgba(8,20,33,0.55);
+box-shadow: 0 4px 5px 0 rgba(0,0,0,0.50), inset -1px 0 0 0 rgba(255,255,255,0.20), inset 0 1px 0 0 rgba(255,255,255,0.20);
+border-radius: 2px 0 0 2px;
+}
+// input宽度
+.w160{width: 160px!important;}
+
+// el-popover 字体样式
+.link{
+  font-size: 14px;
+  color: #4395FF;
+  text-decoration: underline;
+  cursor: pointer;
+}
+// select 下拉框背景
+.el-select-dropdown{
+  background: #fff;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.15);
+  border: none;
+  .el-select-dropdown__item.hover{
+    background: #fff;
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 0;
+  }
+  .el-select-dropdown__item{
+    font-size: 12px;
+    color: #000;
+  }
+  .el-select-dropdown__item:hover{
+    background:rgba(63,164,237,0.1);
+  }
+}
+
+// select下拉菜单尖括号颜色
+.el-popper .popper__arrow{
+  border-bottom-color: #ddd !important;
+}
+.el-popper .popper__arrow::after{
+  border-bottom-color: #ddd !important;
+}
+.el-popover{
+  background: #20344F;
+  border: none;
+}
+.el-checkbox__label,.el-checkbox__input.is-checked+.el-checkbox__label{
+  font-size: 12px;
+  color: #E6E6E6;
+}
+// el-checkbox
+.el-checkbox {
+  margin: 5px 0px;
+  display: block;
+}
+.ems-table .el-checkbox{display: inline-block;padding-right: 20px;}
+// .el-tree
+.el-tree,.el-tree:visited,.el-tree-node__content:hover,.el-tree-node:focus>.el-tree-node__content{
+  background: none;
+}
+
+// el-dropdown
+.el-dropdown-menu{
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  .el-dropdown-menu__item{
+    color: #000;
+  }
+  .el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover{
+    background: #014099;
+    color: #000;
+  }
+}
+
+.el-form-item__label{
+  color:rgba($color: #000, $alpha: 1);
+  width: 150px;
+}
+
+.el-textarea.is-disabled .el-textarea__inner {
+  background-color:#fff !important;
+  border:1px solid #43648F;
+  font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+}
+
+.el-checkbox-group /deep/ .el-checkbox{
+  margin:0;
+  display: block;
+  margin-left:20px;
+  margin-top:10px;
+}
+.el-checkbox /deep/ .el-checkbox__inner{
+  background: #fff;
+  border: 1px solid #409EFF;
+  border-radius: 2px;
+}
+.el-checkbox /deep/ .el-checkbox__label{
+  color:#606266;
+}
+.el-checkbox /deep/ .is-checked>.el-checkbox__inner{
+  background:#409EFF;
+  border-color: #409EFF;
+}
+
+.retailLabelClass .el-form-item__label {
+  color: #000;
+  width: 70px;
+}
+.calendarWith .el-date-editor.el-input, .el-date-editor.el-input__inner {
+  width: 100%;
+}

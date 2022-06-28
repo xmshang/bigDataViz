@@ -1,0 +1,120 @@
+
+// el-table 封装
+.ems-table::before{
+    height: 0px;
+}
+.ems-table {
+    background: #fff; 
+    border: 1px solid rgba(0, 111, 255,1);
+    opacity: 0.8;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-size: 14px;
+    color: #000;
+    thead{
+        font-weight: bold;
+        opacity: 1;
+    }
+    tr{
+        background: rgb(255, 255, 255);
+        td, th.is-leaf{
+            border-bottom: 1px solid rgba(0, 111, 255,0);
+        }
+        th{
+            background:#014099!important;
+            font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+    }
+}
+.el-table--enable-row-hover .el-table__body tr:hover>td{background-color:rgba(30, 95, 185, 0.45)!important}
+.el-table--striped .el-table__row--striped td{background: rgba(0, 111, 255, 0.15)!important;}
+.el-table__fixed-right::before, .el-table__fixed::before{background-color: none!important;height:0;}
+
+// el-form 封装
+  .ems-form{
+    .el-form-item__label{
+        width: 160px;
+        opacity: 0.6;
+        font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    .el-form-item__content{width: 50%}
+  }
+.el-form-item__label,.el-form-item__content{
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.ems-formset{
+    .el-form-item{display: inline;}
+    .el-form-item__label{
+        opacity: 0.6;
+        font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+    }
+    p{
+        font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+        font-size: 14px;
+        color: #FFFFFF;
+        padding: 20px 0;
+    }
+}
+
+.billmanage .el-table__row td div{
+    text-align: center;
+  }
+.billmanage th div{
+    text-align: center;
+  }
+.borderstyle{
+    border:1px solid rgba(56, 100, 153, 0.5)
+}
+// 资费管理
+.zifeitak {
+    thead{
+        .el-table_3_column_8{
+            .cell{
+                text-align: center;
+            }
+        }
+    }
+}
+// cml
+.adduserfrom .el-form-item__label{
+    width: 90px;
+}
+.adduserfrom .el-form-item__error{
+    left: 90px;
+}
+.adduserfrom .el-checkbox{
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.drawerTableHeader{
+    tr{
+        background: rgb(255, 255, 255);
+        td, th.is-leaf{
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+        }
+        th{
+            color: #909399;
+            font-weight: 500;
+            background:#F5F7FA!important;
+            font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+            font-size: 14px;
+        }
+    }
+}
+// vxe-table
+.vxe-table .vxe-cell {
+    white-space: normal;
+    word-break: break-all;
+    padding: 0 10px;
+    text-align: center;
+}

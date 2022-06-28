@@ -1,0 +1,151 @@
+/* 对话框 
+朱荣文
+creatTime: 2018年7月13日10:27:10
+lastTime: 2018年7月13日10:27:14
+*/
+.ems-dialog{
+    // width:80%;
+    // position: absolute;
+    // top:0;
+    // left:0;
+    // right:0;
+    // bottom:0;
+    // margin: auto;
+    .el-dialog{
+      background: radial-gradient(circle at center center, rgba(23, 48, 78, 1), rgba(20, 37, 63, 1)),
+      linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) left top,
+      linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) left top,
+      linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) right top,
+      linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) right top,
+      linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) left bottom,
+      linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) left bottom,
+      linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) right bottom,
+      linear-gradient(rgba(179,224,255,0.62), rgba(179,224,255,0.62)) right bottom,
+      linear-gradient(rgba(56, 144, 184, 0.60), rgba(56, 144, 184, 0.60)) top,
+      linear-gradient(rgba(26, 87, 130, 0.60), rgba(26, 87, 130, 0.60)) bottom,
+      linear-gradient(rgba(56, 144, 184, 0.60), rgba(219, 240, 255, 0.80), rgba(26, 87, 130, 0.60)) left,
+      linear-gradient(rgba(56, 144, 184, 0.60), rgba(219, 240, 255, 0.80), rgba(26, 87, 130, 0.60)) right;
+      background-repeat: no-repeat;
+      background-position: 1px 1px, 0px 0px, 0px 0px, 0px 100%, 0px 100%, 100% 0px, 100% 0px, 100% 100%, 100% 100%, 0px 0px, 0px 100%, 0px 100%, 100% 100%;
+      background-size: calc(100% - 2px) calc(100% - 2px), 1px 10px, 10px 1px, 1px 10px, 10px 1px, 1px 10px, 10px 1px, 1px 10px, 10px 1px, 100% 1px, 100% 1px, 1px 100%, 1px 100%;
+    }
+    .el-dialog__header{
+      height:70px;
+      border-bottom:1px solid rgba(51,171,255,0.2);
+      .el-dialog__title{
+        font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+        font-size: 14px;
+        color: #E6E6E6;
+      }
+    }
+    .el-dialog__footer{
+      .el-button{
+        width:100px;
+        border:none; 
+        background: rgba(255,255,255,0.20);
+        border-radius:0;
+        color:#fff;
+      }
+      .el-button:nth-of-type(2){
+        background: #014099;
+      }
+    } 
+}
+.budgetdialog {
+  .el-dialog{width:480px;text-align: center;height:320px; }
+  .budgetfromspan{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    opacity: 0.5;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+    font-size: 14px;
+    color: #FFFFFF;
+  }
+}
+.smalldialog {
+  .el-dialog{width:480px;text-align: center;height:220px; }
+}
+// 分页样式   调用分页组件时需加上background属性，否则改变背景色不生效
+.el-pagination{
+  margin-top: 20px;
+}
+.el-pagination.is-background{
+  .btn-prev{
+    font-size: 14px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    margin-right: 10px;
+  }
+  .btn-next{
+    font-size: 14px;
+    border-radius: 50%;
+    color: #FFFFFF;
+  }
+  .el-pager>li{
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  .el-pager>li:not(.disabled).active{
+    background: #fff;
+    color: #014099;;
+    border:none;
+  }
+  .el-pager>li.btn-quicknext{
+    background: none;
+    border:none;
+  }
+} 
+
+//dialogalert 成功提示 设置页面
+.dialogalert{
+  width: 330px;
+  height: 160px;
+  background: rgba(0,0,0,0.50);
+  text-align: center;
+  position: fixed;
+  top: 40%;
+  left: 49%;
+  z-index: 22;
+  img{
+    padding-top: 30px;
+  }
+  .el-form-item{margin-bottom: 0;}
+}
+
+.opacity-dialog{
+  .el-dialog{
+    background: rgba(0,0,0,0.5);
+    .el-dialog__header{
+      display: none;
+    }
+    .el-dialog__body{
+      text-align: center;
+      i{
+        font-size: 44px;
+        color: #7097cc;
+      }
+      p{
+        margin-top: 20px;
+        color: #fff;
+        font-size: 16px;
+      }
+      overflow: auto;
+    }
+  }
+}
+.iframeDialog .el-dialog__body {
+  padding: 30px 20px;
+  color: #606266;
+  font-size: 14px;
+  word-break: break-all;
+  overflow: auto;
+}
+// .el-pagination.is-background /deep/ .el-pager li:not(.disabled).active {
+//   background-color: #f1f2f7 !important;
+//   color: #014099 !important;
+// }
