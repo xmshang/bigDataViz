@@ -7,7 +7,6 @@
 // 后台管理系统服务器地址
 export const baseUrl = 'http://localhost:9998'
 // 服务器地址
-// export const projectBaseUrl = 'http://54.218.241.2:8080/'
 export const projectBaseUrl = 'https://bigdataviz-caf9f.web.app/'
 export default {
     baseUrl,
